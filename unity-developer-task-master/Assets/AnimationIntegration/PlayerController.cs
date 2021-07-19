@@ -72,7 +72,9 @@ public class PlayerController : MonoBehaviour
         float distance = Vector3.Distance(this.transform.position, _target.transform.position);
 
         DIstanceFromEnemy(distance);
-        
+
+        Quest1();
+
         if (Input.GetMouseButton(1))
         {
             var direction = Input.mousePosition - Camera.main.WorldToScreenPoint(this.transform.position);
